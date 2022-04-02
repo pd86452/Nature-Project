@@ -1,0 +1,145 @@
+
+
+.nav_check{
+    display: none;
+
+}
+
+.nav_button{
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    position: fixed;
+    top: 5.5rem;
+    right: 3.5rem;
+    border-radius: 50%;
+    z-index: 200;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.1);
+
+}
+
+.nav_bg{
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    position: fixed;
+    top: 5.5rem;
+    right: 3.5rem;
+    background-image: radial-gradient(#7ed56f, #28b485);
+    z-index: 100;
+    transition: transform .8s;
+
+    /* transform: scale(50); */
+}
+
+.navi_nav{
+    height: 100vh;
+    width: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 150;
+    opacity: 0;
+
+    transition: all .4s;
+
+}
+
+.nav_list{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    list-style: none;
+    text-align: center;
+    width: 100%;
+}
+
+.nav_item{
+    margin: 1.5rem;
+
+}
+
+.nav_link:visited{
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, orangered 0%,orangered 50%, white 50%);
+    background-size: 200%;
+    transition: all 0.4s;
+
+}
+
+.nav_link:link{
+    font-size: 2rem;
+    font-weight: 300;
+    padding: 1rem 1.5rem;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: linear-gradient(120deg, transparent 0%, transparent 50%, white 50%);
+    background-size: 230%;
+    transition: all 0.4s;
+}
+
+.nav_link:hover{
+    background-position: 100%;
+    color: #55c57a;
+    transform: translateX(1rem);
+}
+
+.nav_link:active {
+    background-position: 100%;
+    color: #55c57a;
+    transform: translateX(1rem);
+}
+
+.nav_check:checked~.nav_bg{
+    transform: scale(80);
+}
+
+.nav_check:checked~.navi_nav {
+    opacity: 1;
+    width: 100%;
+}
+
+.nav_icon{
+    position: relative;
+    margin-top: 3rem;
+    left: 1rem;
+
+}
+
+
+
+.divIcon {
+    width: 35px;
+    height: 4px;
+    background-color: #333;
+    margin: 6px 0;
+    z-index: 300;
+    transition: all 0.5s ease-out;
+}
+
+.iconhandle{
+    margin-top: 1.8rem;
+    margin-left: 6px;
+    transition: all 0.5s ease-out;
+    
+}
+
+
+.nav_check:checked +.nav_button .d1 {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.nav_check:checked+.nav_button .d2 {
+    opacity: 0;
+}
+
+.nav_check:checked+.nav_button .d3 {
+    transform: rotate(-45deg) translate(7px, -9px);
+}

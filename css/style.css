@@ -1,0 +1,33 @@
+/*
+COLORS:
+
+Light green: #7ed56f
+Medium green: #55c57a
+Dark green: #28b485
+
+secondary color for card;
+
+light orange : #ffb900;
+dark oragne  : #ff7730;
+
+light blue : #2998ff;
+dark blue  : #5643fa;             
+
+*/
+@import "base/base.css";
+@import "base/animation.css";
+@import "layout/header.css";
+@import "components/button.css";
+@import "layout/grid.css";
+@import "pages/home.css";
+@import "base/utility.css";
+@import "components/composition.css";
+@import "components/feature-box.css";
+@import "components/card.css";
+@import "components/story.css";
+@import "components/bg-video.css";
+@import "components/form.css";
+@import "layout/footer.css";
+@import "layout/navi.css";
+@import "layout/popup.css";
+

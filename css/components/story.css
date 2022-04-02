@@ -1,0 +1,39 @@
+.story{
+    width: 75%;
+    margin: 0 auto;
+    box-shadow: 0 3rem 6rem rgba(0,0,0,0.1);
+   
+    border-radius: 3px; 
+    padding: 6rem;
+    margin-bottom: 5rem;
+    padding-bottom: 10rem;
+    font-size: 1.2rem;
+    transform: skewX(-12deg);
+
+}
+
+.story_shape{
+    width: 15rem;
+    height: 15rem;
+    float: left;
+    position: relative;
+    -webkit-shape-outside:circle(50% at 50% 50%);
+    shape-outside: circle(50% at 50% 50%);
+    -webkit-shape-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%);
+
+}
+
+.story_img{
+    height: 100%;
+
+}
+
+.story_text{
+   padding-left: 20rem;
+}
+.story >*{
+    transform: skewX(12deg);
+}
+
+
